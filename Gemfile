@@ -13,5 +13,3 @@ gem 'shotgun'
 
 gem 'buffer'
 gem 'omniauth-buffer2'
-
-gem 'haml'

@@ -16,7 +16,7 @@ require 'logger'
 require 'sinatra'
 require "sinatra/reloader" if development?
 
-require 'haml'
+require 'erb'
 
 require 'buffer'
 require 'omniauth-buffer2'
