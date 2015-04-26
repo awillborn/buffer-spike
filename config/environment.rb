@@ -28,11 +28,11 @@ APP_NAME = APP_ROOT.basename.to_s
 
 Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
 
-env_config = YAML.load_file(APP_ROOT.join('config', 'buffer.yaml'))
-
-env_config.each do |key, value|
-  ENV[key] = value
-end
+# Load environment variables for development
+# env_config = YAML.load_file(APP_ROOT.join('config', 'buffer.yaml'))
+# env_config.each do |key, value|
+#   ENV[key] = value
+# end
 
 use OmniAuth::Builder do
   provider :buffer, ENV['BUFFER_KEY'], ENV['BUFFER_SECRET']
