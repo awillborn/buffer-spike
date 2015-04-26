@@ -1,0 +1,35 @@
+body {
+  font-family: 'Quicksand';
+  background-image: url('/stardust.png');
+  background-color: azure;
+}
+
+header {
+  text-align: center;
+}
+
+header .subhead {
+  font-style: italic;
+}
+
+.container {
+  margin: 20px auto;
+  width: 80%;
+  padding: 0px 20px 20px 20px;
+}
+
+.tweets-container {
+  padding-left: 15%;
+}
+
+.tweets-container .column {
+  display: inline-block;
+}
+
+.tweets-container .post-times {
+  width: 30%;
+}
+
+.tweets-container .content {
+  width: 65%;
+}
