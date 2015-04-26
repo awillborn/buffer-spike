@@ -28,8 +28,9 @@ header .subhead {
 
 .tweets-container .post-times {
   width: 30%;
+  padding-right: 10%;
 }
 
 .tweets-container .content {
-  width: 65%;
+  width: 55%;
 }
