@@ -4,11 +4,9 @@
     %h1.subhead before they are tweeted
   - if @updates.any?
     .tweets-container
-      .post-times.column
-        -@updates.each do |update|
-          %h3="#{update.day.downcase} at #{update.due_time}"
-      .content.column
-        -@updates.each do |update|
-          %h3=update.text_formatted
+      -@updates.each do |update|
+        .tweet
+          %h3.due-time="#{update.day.downcase} at #{update.due_time}"
+          %h3.content=update.text_formatted
   - else
     %h3="Looks like #{@username} has no pending tweets"

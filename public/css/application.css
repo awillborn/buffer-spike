@@ -22,15 +22,17 @@ header .subhead {
   padding-left: 15%;
 }
 
-.tweets-container .column {
-  display: inline-block;
+.tweets-container .tweet {
+  margin-bottom: 1em;
 }
 
-.tweets-container .post-times {
+.tweets-container .tweet .due-time {
+  display: inline-block;
   width: 30%;
   padding-right: 10%;
 }
 
-.tweets-container .content {
+.tweets-container .tweet .content {
+  display: inline-block;
   width: 55%;
 }
